@@ -1,0 +1,13 @@
+{
+  "name": "raftaar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Raftaar ecommerce — admin dashboard and customer storefront",
+  "scripts": {
+    "install:all": "npm install --prefix admin && npm install --legacy-peer-deps --prefix frontend",
+    "start:admin": "npm start --prefix admin",
+    "start:frontend": "npm start --prefix frontend",
+    "build:admin": "npm run build --prefix admin",
+    "build:frontend": "npm run build --prefix frontend"
+  }
+}

@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap");
+
+/* RAFTAAR — Quick delivery app theme */
+:root {
+  --raftaar-green: #0c831f;
+  --raftaar-green-dark: #0a6b19;
+  --raftaar-green-light: #e8f5e9;
+  --raftaar-orange: #fc8019;
+  --raftaar-bg: #f7f8fa;
+  --raftaar-card: #ffffff;
+  --raftaar-text: #1c1c1c;
+  --raftaar-muted: #686b78;
+  --raftaar-border: #e8e8e8;
+  --raftaar-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  background: var(--raftaar-bg) !important;
+  font-family: "DM Sans", "Segoe UI", system-ui, sans-serif !important;
+  color: var(--raftaar-text);
+}
+
+.bg-blue,
+.btn-blue,
+nav .allCatTab,
+.newsLetterSection form button,
+.locationModal .countryList li button.active {
+  background: var(--raftaar-green) !important;
+}
+
+.btn-blue:hover,
+nav .allCatTab:hover {
+  background: var(--raftaar-green-dark) !important;
+}
+
+.bg-red {
+  background: var(--raftaar-orange) !important;
+}
+
+.text-red,
+.text-blue,
+.countryDrop .name,
+footer .linksWrap h5,
+.productItem .info h4:hover {
+  color: var(--raftaar-green) !important;
+}
+
+.info .netPrice {
+  color: var(--raftaar-green) !important;
+}
+
+/* Header — delivery style */
+.headerWrapper .top-strip {
+  background: linear-gradient(90deg, var(--raftaar-green), #12a028) !important;
+  padding: 6px 0 !important;
+}
+
+.headerWrapper .top-strip p {
+  font-size: 13px !important;
+  letter-spacing: 0.2px;
+}
+
+.headerWrapper .header {
+  padding: 12px 0 !important;
+  border-bottom: 1px solid var(--raftaar-border);
+}
+
+.logo-text {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--raftaar-green);
+  letter-spacing: -0.5px;
+  text-decoration: none !important;
+}
+
+.logo-text span {
+  color: var(--raftaar-orange);
+}
+
+.delivery-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--raftaar-green-light);
+  color: var(--raftaar-green);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-left: 12px;
+}
+
+.headerSearch {
+  background: #f2f3f5 !important;
+  border-radius: 12px !important;
+  border: 1px solid var(--raftaar-border) !important;
+}
+
+.cartTab .price {
+  color: var(--raftaar-green) !important;
+}
+
+.cartTab button {
+  background: var(--raftaar-green-light) !important;
+}
+
+.cartTab button svg {
+  color: var(--raftaar-green) !important;
+}
+
+.cartTab .count {
+  background: var(--raftaar-orange) !important;
+}
+
+/* Delivery hero */
+.delivery-hero {
+  background: linear-gradient(135deg, var(--raftaar-green) 0%, #0f9d24 50%, #12b32a 100%);
+  border-radius: 16px;
+  padding: 28px 32px;
+  color: #fff;
+  margin-bottom: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.delivery-hero::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.delivery-hero h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.delivery-hero p {
+  opacity: 0.95;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.delivery-hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.delivery-hero-badges span {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Home banner overlay */
+.homeBannerSection .item {
+  position: relative;
+  border-radius: 16px !important;
+}
+
+.banner-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 24px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
+  color: #fff;
+  border-radius: 0 0 16px 16px;
+}
+
+.banner-caption h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.banner-caption p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Categories */
+.homeCat {
+  padding: 20px 0 10px !important;
+  background: transparent;
+}
+
+.homeCat .hd {
+  font-size: 20px !important;
+  text-transform: none !important;
+  color: var(--raftaar-text);
+}
+
+.homeCat .swiper .item {
+  width: 88px !important;
+  height: 88px !important;
+  border-radius: 16px !important;
+  border: none !important;
+  box-shadow: var(--raftaar-shadow);
+  background: var(--raftaar-card) !important;
+}
+
+.homeCat .swiper .item img {
+  width: 70% !important;
+  height: 70% !important;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.homeCat .swiper .swiper-slide h6 {
+  font-size: 13px !important;
+  font-weight: 600;
+}
+
+/* Product cards — delivery grid */
+.productItem {
+  background: var(--raftaar-card) !important;
+  border: 1px solid var(--raftaar-border) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.productItem:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--raftaar-shadow) !important;
+  border-color: var(--raftaar-green-light) !important;
+}
+
+.productItem .img_rapper {
+  height: 140px !important;
+  background: #fafafa !important;
+  border-radius: 12px 12px 0 0 !important;
+}
+
+.productItem .img_rapper img {
+  object-fit: contain !important;
+  height: 100% !important;
+  padding: 8px;
+}
+
+.productItem .info {
+  padding: 10px 12px 12px !important;
+}
+
+.productItem .info h4 {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: var(--raftaar-text) !important;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 36px;
+}
+
+.productItem .product-unit {
+  font-size: 12px;
+  color: var(--raftaar-muted);
+  margin-top: 2px;
+}
+
+.productItem .delivery-time {
+  font-size: 11px;
+  color: var(--raftaar-green);
+  font-weight: 600;
+}
+
+.productItem .price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  gap: 8px;
+}
+
+.productItem .price-col .netPrice {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+}
+
+.productItem .price-col .oldPrice {
+  font-size: 12px !important;
+  display: block;
+}
+
+.productItem .btn-add-cart {
+  min-width: 36px !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 8px !important;
+  background: var(--raftaar-green-light) !important;
+  border: 1px solid var(--raftaar-green) !important;
+  color: var(--raftaar-green) !important;
+  padding: 0 !important;
+}
+
+.productItem .btn-add-cart:hover {
+  background: var(--raftaar-green) !important;
+  color: #fff !important;
+}
+
+.productItem .badge {
+  background: var(--raftaar-orange) !important;
+  color: #fff !important;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.productItem .actions {
+  display: none !important;
+}
+
+/* Section headers */
+.homeProducts {
+  padding: 16px 0 32px !important;
+}
+
+.hd {
+  text-transform: none !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: var(--raftaar-text);
+}
+
+.homeProducts .text-light {
+  color: var(--raftaar-muted) !important;
+}
+
+.viewAllBtn {
+  border-color: var(--raftaar-green) !important;
+  color: var(--raftaar-green) !important;
+  font-weight: 600 !important;
+}
+
+.viewAllBtn:hover {
+  background: var(--raftaar-green-light) !important;
+}
+
+.filterTabs .MuiTab-root {
+  text-transform: capitalize !important;
+  font-weight: 600 !important;
+}
+
+.filterTabs .Mui-selected {
+  color: var(--raftaar-green) !important;
+}
+
+.productRow2 {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.productRow2 .productItem {
+  width: 100% !important;
+}
+
+/* Mobile bottom nav */
+.fixed-bottom-menu {
+  background: #fff !important;
+  border-top: 1px solid var(--raftaar-border);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.fixed-bottom-menu .circle svg {
+  color: var(--raftaar-muted) !important;
+}
+
+.fixed-bottom-menu a.active .circle svg,
+.fixed-bottom-menu .title {
+  color: var(--raftaar-green) !important;
+}
+
+/* Footer */
+footer .linksWrap h5 {
+  color: var(--raftaar-green) !important;
+}
+
+.newsLetterSection {
+  background: linear-gradient(135deg, var(--raftaar-green), #0f9d24) !important;
+}
+
+/* Simplified home layout */
+.homeProducts .col-md-3 {
+  display: none;
+}
+
+.homeProducts .col-md-9 {
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+}
+
+.delivery-section {
+  margin-bottom: 28px;
+}
+
+@media (max-width: 768px) {
+  .delivery-hero h1 {
+    font-size: 22px;
+  }
+
+  .productRow2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
